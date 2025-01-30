@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">NoteSync</string>
+
+    <!-- General Messages -->
+    <string name="welcome_message">Siyakwamukela ku-NoteSync</string>
+
+    <!-- Settings -->
+    <string name="settings">Izilungiselelo</string>
+    <string name="dark_mode">Imodi Emnyama</string>
+    <string name="select_language">Khetha Ulimi</string>
+    <string name="save_settings">Gcina Izilungiselelo</string>
+    <string name="back_to_menu">Buyela ku Menu</string>
+
+    <!-- Notifications -->
+    <string name="settings_saved">Izilungiselelo zilandisiwe</string>
+    <string name="select_language_prompt">Sicela ukhethe ulimi</string>
+
+    <!-- Additional Strings for Better UX -->
+    <string name="apply_changes_prompt">Sicela uqale kabusha uhlelo lokusebenza ukuze ulungise izinguquko</string>
+    <string name="language_changed">Ulimi luguqulwe ngempumelelo</string>
+
+    <string name="home">Home</string>
+</resources>

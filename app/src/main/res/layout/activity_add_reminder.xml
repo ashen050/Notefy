@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/reminderTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reminder Title"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/reminderDescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Reminder Description"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/dateTimePickerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick Date and Time"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/saveReminderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Reminder"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:id="@+id/backToMenuButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Menu"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

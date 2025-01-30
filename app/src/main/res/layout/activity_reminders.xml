@@ -1,0 +1,34 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Button to Add a Reminder -->
+    <Button
+        android:id="@+id/addReminderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Reminder"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"/>
+
+    <!-- ListView to Display Reminders -->
+    <ListView
+        android:id="@+id/remindersListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Button to Go Back to the Menu -->
+    <Button
+        android:id="@+id/backToMenuButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Menu"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

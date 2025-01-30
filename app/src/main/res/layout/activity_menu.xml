@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Image at the top -->
+    <ImageView
+        android:id="@+id/menuImage"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/notefy"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Digital Clock TextView -->
+    <TextView
+        android:id="@+id/clockTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading time..."
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="24dp" />
+
+    <!-- GridLayout for buttons 2x2 -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Add Note Button -->
+        <Button
+            android:id="@+id/addNoteButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:text="Add Note"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/black" />
+
+        <!-- View Notes Button -->
+        <Button
+            android:id="@+id/viewNotesButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:text="View Notes"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/black"
+            android:onClick="onViewNotesClick" />
+
+        <!-- Locked Notes Button -->
+        <Button
+            android:id="@+id/lockedNotesButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:text="Locked Notes"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/black" />
+
+        <!-- Reminders Button -->
+        <Button
+            android:id="@+id/remindersButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:text="Reminders"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/black" />
+
+        <!-- Profile Button -->
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:text="Profile"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/black" />
+
+        <!-- Collaboration Button -->
+        <Button
+            android:id="@+id/collaborationButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:text="Collaboration"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/black" />
+
+        <!-- Settings Button -->
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:text="Settings"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/black" />
+
+    </GridLayout>
+
+</LinearLayout>

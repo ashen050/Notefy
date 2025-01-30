@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title for Locked Notes -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Locked Notes"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="24dp" />
+
+    <!-- Status TextView to show locked notes or prompt -->
+    <TextView
+        android:id="@+id/lockedNoteStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please select a note to unlock."
+        android:gravity="center"
+        android:paddingTop="16dp" />
+
+
+    <ListView
+        android:id="@+id/lockedNotesListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:paddingTop="16dp" />
+
+    <!-- Back to Menu Button -->
+    <Button
+        android:id="@+id/backToMenuButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Menu"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white" />
+</LinearLayout>

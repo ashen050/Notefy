@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">NotaSinkronisasie</string>
+
+    <!-- General Messages -->
+    <string name="welcome_message">Welkom by NotaSinkronisasie</string>
+
+    <!-- Settings -->
+    <string name="settings">Instellings</string>
+    <string name="dark_mode">Donker Modus</string>
+    <string name="select_language">Kies Taal</string>
+    <string name="save_settings">Stoor Instellings</string>
+    <string name="back_to_menu">Terug na Menu</string>
+
+    <!-- Notifications -->
+    <string name="settings_saved">Instellings gestoor</string>
+    <string name="select_language_prompt">Kies asseblief \'n taal</string>
+
+    <!-- Additional Strings for Better UX -->
+    <string name="apply_changes_prompt">Herbegin die app om veranderinge toe te pas</string>
+    <string name="language_changed">Taal suksesvol verander</string>
+
+    <string name="home">Home</string>
+</resources>

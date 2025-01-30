@@ -1,0 +1,104 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Note"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="24dp" />
+
+
+    <EditText
+        android:id="@+id/editTextNoteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:hint="Note Title"
+        android:inputType="text" />
+
+    <!-- EditText for Note Content -->
+    <EditText
+        android:id="@+id/editTextNoteContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:hint="Note Content"
+        android:inputType="textMultiLine"
+        android:minLines="5"
+        android:gravity="top"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button to Add Image -->
+    <Button
+        android:id="@+id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Add Image"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"/>
+
+    <!-- ImageView to display selected image, hidden initially -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <!-- Switch for Password Lock with minHeight and padding -->
+    <Switch
+        android:id="@+id/lockWithPasswordSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:text="Lock with Password"
+        android:layout_marginTop="16dp" />
+
+    <!-- Switch for Fingerprint Lock with minHeight and padding -->
+    <Switch
+        android:id="@+id/lockWithFingerprintSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:text="Lock with Fingerprint"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button to Save the Note -->
+    <Button
+        android:id="@+id/saveNoteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Save Note"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"/>
+
+    <!-- Button to Go Back to the Menu -->
+    <Button
+        android:id="@+id/backToMenuButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Back to Menu"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

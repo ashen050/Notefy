@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">NoteSync</string>
+
+    <!-- General Messages -->
+    <string name="welcome_message">Welcome to NoteSync</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="select_language">Select Language</string>
+    <string name="save_settings">Save Settings</string>
+    <string name="back_to_menu">Back to Menu</string>
+
+    <!-- Notifications -->
+    <string name="settings_saved">Settings saved</string>
+    <string name="select_language_prompt">Please select a language</string>
+
+    <!-- Additional Strings for Better UX -->
+    <string name="apply_changes_prompt">Please restart the app to apply changes</string>
+    <string name="language_changed">Language changed successfully</string>
+
+    <!-- Home Label -->
+    <string name="home">Home</string>
+</resources>

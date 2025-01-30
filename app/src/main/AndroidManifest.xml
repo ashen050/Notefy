@@ -1,0 +1,82 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Required permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NoteSync"
+        tools:targetApi="31">
+
+        <!-- SplashActivity as the launcher activity -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- RegisterActivity -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:label="Register" />
+
+        <!-- LoginActivity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="Login" />
+
+        <!-- MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/home"
+            android:configChanges="locale|layoutDirection|screenSize|orientation"
+            tools:ignore="UnusedAttribute" />
+
+        <!-- Other activities -->
+        <activity android:name=".MenuActivity" android:exported="false" android:label="Menu" />
+        <activity android:name=".ProfileActivity" android:exported="false" android:label="Profile" android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity android:name=".LockedNotesActivity" android:exported="false" android:label="Locked Notes" />
+        <activity android:name=".RemindersActivity" android:exported="true" android:label="Reminders" />
+        <activity android:name=".AddReminderActivity" android:exported="true" android:label="Add Reminder" />
+        <activity android:name=".ReminderDetailActivity" android:exported="false" android:label="Reminder Details" />
+        <activity android:name=".CollaborationActivity" android:exported="false" android:label="Collaboration" />
+        <activity android:name=".SettingsActivity" android:exported="false" android:label="Settings" android:configChanges="locale|layoutDirection|screenSize|orientation" android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity android:name=".AddNoteActivity" android:exported="false" android:label="Add Note" />
+        <activity android:name=".ViewNotesActivity" android:exported="false" android:label="View Notes" android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity android:name=".NoteDetailActivity" android:exported="false" android:label="Note Details" android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+
+        <!-- Firebase Messaging Service -->
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- SyncService for background note synchronization -->
+        <service android:name=".SyncService" android:exported="false" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "805267135848",
+    "project_id": "notesync-9bea0",
+    "storage_bucket": "notesync-9bea0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805267135848:android:c4ce698e0295f7504f0add",
+        "android_client_info": {
+          "package_name": "com.example.notesync"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDVEhZNtCax6LGl8gccNOODaLQam0ooBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

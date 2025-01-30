@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Note Title -->
+        <EditText
+            android:id="@+id/noteTitleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Note Title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            tools:text="Sample Note Title" />
+
+        <!-- Note Content -->
+        <EditText
+            android:id="@+id/noteContentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Note Content"
+            android:textSize="16sp"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:lines="10"
+            android:minLines="5"
+            android:scrollbars="vertical"
+            android:paddingBottom="16dp"
+            tools:text="Sample note content goes here." />
+
+        <!-- Save Note Button -->
+        <Button
+            android:id="@+id/saveNoteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Note"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText" />
+
+        <!-- Delete Note Button -->
+        <Button
+            android:id="@+id/deleteNoteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Note"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText" />
+
+        <!-- Back to Menu Button -->
+        <Button
+            android:id="@+id/backToMenuButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Menu"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</ScrollView>
